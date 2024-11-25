@@ -1,15 +1,9 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-<<<<<<< HEAD
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="http://localhost/TFM/img/usuaris/<?=  $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
         <div>
           <p class="app-sidebar__user-name"></span> <?= $_SESSION['userData']['nom']; ?> </span> <?= $_SESSION['userData']['cognoms']; ?> </p>
-=======
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?php echo media()?>/img/usuaris/<?= $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
-        <div>
-          <p class="app-sidebar__user-name"><?= $_SESSION['userData']['nom']; ?>  <?= $_SESSION['userData']['cognoms']; ?> </p>
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
           <p class="app-sidebar__user-designation"><?= $_SESSION['userData']['nombre_rol']; ?></p>
         </div>
       </div>

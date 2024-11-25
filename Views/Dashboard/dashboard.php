@@ -19,17 +19,9 @@
             <h3 class="tile-title">Benvingut al teu panell de control</h3>
   <div class="user-container justify-content-center align-items-center">
     <h2>Dades de l'Usuari</h2>
-<<<<<<< HEAD
     <div class="arreglo ">
       <img class="arreglo_imatge d-flex justify-content-center align-items-center" src="http://localhost/TFM/img/usuaris/<?=  $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
     <div></div>
-=======
-
-    <div class="div_Imatge"> 
-      <img class="div_Imatge_Usuari" src="<?php echo media()?>/img/usuaris/<?= $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
-    </div>
-    
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
     <div class="user-info">
         <span>ID Usuari: </span> <?= $_SESSION['userData']['id']; ?>
     </div>

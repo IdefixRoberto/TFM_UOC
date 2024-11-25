@@ -19,7 +19,7 @@
            $data['page_tag']='Login - Tenda Virual'; //es el nom que apareixerà al costat del favicon
            $data['page_title'] = 'Login'; //es el titol del meta que tindrà aquesta url
            $data['page_name'] = 'login';//nom de la seccio
-           $data['page_functions_js'] = 'functions_login.js';//
+           $data['page_functions_js'] = 'funcio_login.js';//
             // cridem per a la pàgina principal la vista home;
             
            $this->views ->getViews($this,'login',$data);

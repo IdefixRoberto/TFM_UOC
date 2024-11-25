@@ -74,7 +74,6 @@
     color: #555;
 }
 
-<<<<<<< HEAD
 
 .arreglo_imatge{
     border-radius: 50%;
@@ -90,33 +89,3 @@
     height: auto;
     margin: 5vh auto; 
 }
-=======
-.div_Imatge_Usuari{
-    border-radius: 50% !important;
-    border: 6px solid gray;
-    max-width: 12vw;
-    min-width: 150px !important;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    
-}
-
-.div_Imatge{
-    margin: 3vw 30%;
-
-
-    
-}
-
-body {
-    margin: 0;
-    font-family: "Roboto", sans-serif, Arial, sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #FFF;
-  }
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb

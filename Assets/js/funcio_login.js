@@ -1,90 +1,101 @@
-const base_url = 'http://localhost/TFM/';
+
 const email = document.getElementById('txtEmail');
 const password = document.getElementById('txtpassword');
 const loginButton = document.getElementById('loginButton');
 const loginForm = document.getElementById('loginForm');
 const emailError = document.getElementById('emailError');
+let emailValidated = false;
+let passwordValidated = false;
 
-// Patró per validar el format d'email extret de la web https://www.coderbox.net/blog/validar-email-usando-javascript-y-expresiones-regulares/
-const emailPattern = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-
-// Funció de validació contínua
-function validateForm() {
-<<<<<<< HEAD
-    // Primer valide si els camps han estat omplerts
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expressió regular per validar el format del correu electrònic
-
-    if (email.value.trim() !== "" && password.value.trim() !== "" && emailPattern.test(email.value.trim())) {
-=======
-    // Comprova si els camps estan complets i el correu és vàlid
-    const emailValid = emailPattern.test(email.value.trim());
-    const passwordValid = password.value.trim() !== "";
-    
-    if (emailValid && passwordValid) {
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
-        loginButton.disabled = false;
-        loginButton.classList.add('enabled', 'buttonOK');
-        loginButton.classList.remove('buttonNoOK');
-        emailError.classList.remove('error-message');
-        emailError.classList.add('no-error');
-    } else {
-        loginButton.disabled = true;
-        loginButton.classList.remove('enabled', 'buttonOK');
-        loginButton.classList.add('buttonNoOK');
-
-        // Mostra error si l'email és incorrecte
-        if (!emailValid) {
-            emailError.classList.add('error-message');
-            emailError.classList.remove('no-error');
-        } else {
-            emailError.classList.remove('error-message');
-            emailError.classList.add('no-error');
-        }
-    }
+loginButton.addEventListener('click', function() {
+  event.preventDefault();
 }
+)
 
-// el navegador esta escoltant si hi ha canvis en els camps de email i password que son inputs
+function validateForm() {
+ //Primer validem si els camps han estat omplerts
+
+ 
+ 
+ 
+    if (email.value.trim() !== "" && password.value.trim() !== "") {
+    loginButton.disabled = false;
+    loginButton.classList.add('enabled');
+    loginButton.classList.add('buttonOK'); // Habilita el botó i li done un format al cursor pointer
+    loginButton.classList.remove('buttonNoOK'); // Elimine l'estat inhabilitat
+
+    
+  } else {
+
+    loginButton.disabled = true;
+    loginButton.classList.remove('enabled');
+    loginButton.classList.add('buttonNoOK'); // Indique que no està disponibl el botó
+    loginButton.classList.remove('buttonOK'); // Agregue la classe inhabilitat
+
+    
+
+    if(!emailValidated){
+        emailError.classList.remove('error-message')
+        emailError.classList.add('no-error')
+    }else{
+        emailError.classList.add('error-message')
+        emailError.classList.remove('no-error')
+  }
+
+  
+
+  emailValidated = true;
+  passwordValidated = true;
+}}
+
 email.addEventListener('input', validateForm);
 password.addEventListener('input', validateForm);
 
-
-loginForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    
-    // Comprovació final abans d'enviar
-    //Validació per si es manipula el HTML
-    if (!emailPattern.test(email.value.trim()) || password.value.trim() === '') {
-        Swal.fire({
-            icon: "error",
-            title: "Error",
-            text: "Completa correctament tots els camps",
-        });
-        return;
-    }
-
-    // Enviament de dades amb Fetch
-    const ajaxUrl = base_url + 'Login/loginUser';
-    const formData = new FormData(loginForm);
-
-    fetch(ajaxUrl, {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.msg === 'Aquest usuari està inactiu') {
-            Swal.fire({
-                icon: "warning",
-                title: "Usuari inactiu",
-                text: "Si és un error, contacta amb l'administrador",
+            const togglePassword = document.querySelector('#togglePassword');
+            const passwordField = document.querySelector('#txtpassword');
+            
+            togglePassword.addEventListener('click', function () {
+                const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordField.setAttribute('type', type);
+                
+                this.classList.toggle('fa-eye-slash');
             });
-        } else if (data.msg === 'Aquest usuari està donat de baixa') {
-            Swal.fire({
-                icon: "info",
-                title: "Usuari donat de baixa",
-                text: "Aquest usuari està donat de baixa",
+            
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+            
+                if (loginForm) {
+                  
+                    loginForm.onsubmit = function(e) {
+                        
+                        e.preventDefault();
+                        let srtemail = email.value.trim();
+                        let srtpassword = password.value.trim();
+                        if (srtemail === '' || srtpassword === '') {
+                            
+                            Swal.fire({
+                                icon: "error",
+                                title: "Error",
+                                text: "Completa correctament tots els camps",
+                            });
+                            return false;
+                        } else {
+                            
+                            let request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+                            let ajaxUrl = base_url + 'Login/loginUser';
+                            
+                            let formData = new FormData(loginForm);
+                            request.open("POST", ajaxUrl, true);
+                            request.send(formData);
+                            
+
+                        }
+                    }
+                }
             });
-<<<<<<< HEAD
         
 
 
@@ -149,6 +160,7 @@ loginForm.addEventListener('submit', function (e) {
                                  setTimeout(() => {
                                     window.location = base_url + 'Index'; 
                                 }, 2000);
+                                // Si l'inici de sessió és correcte
                                   
                               } 
 
@@ -178,55 +190,5 @@ loginForm.addEventListener('submit', function (e) {
                             
 
                         }
-=======
-        } else if (data.status) {
-            Swal.fire({
-                icon: "success",
-                title: "Sessió iniciada correctament",
-                text: "Benvingut!",
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
             });
-            setTimeout(() => {
-                //Li done un temporizador per a que es visualitze durant un temps
-                window.location = base_url + 'index';
-            }, 2120);
-        } else {
-            Swal.fire({
-                icon: "error",
-                title: "Error",
-                text: "Les dades introduïdes no són correctes",
-            });
-        }
-    })
-    .catch(error => {
-        Swal.fire({
-            icon: "error",
-            title: "Error",
-            text: "Error en la sol·licitud",
-        });
-        console.error('Error:', error);
-    });
-});
 
-
-
-
-
-
-
-
-
-   
-            email.addEventListener('input', validateForm);
-            password.addEventListener('input', validateForm);
-            
-                        const togglePassword = document.querySelector('#togglePassword');
-                        const passwordField = document.querySelector('#txtpassword');
-                        
-                        togglePassword.addEventListener('click', function () {
-                            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-                            passwordField.setAttribute('type', type);
-                            
-                            this.classList.toggle('fa-eye-slash');
-                        });
-                        

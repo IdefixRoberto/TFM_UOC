@@ -473,15 +473,12 @@ a[href*="http://localhost/TFM/login"] span:hover{
 
 
 
-<<<<<<< HEAD
 .cart-details h2 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-=======
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
 
 
 
@@ -520,7 +517,6 @@ a[href*="http://localhost/TFM/login"] span:hover{
     margin: 5px 0;
 }
 
-<<<<<<< HEAD
 .cart-items {
     list-style: none;
     padding: 0;
@@ -585,8 +581,6 @@ a[href*="http://localhost/TFM/login"] span:hover{
     border-radius: 5px;
     background-color: #ecf0f1;
 }
-=======
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
 
 
 
@@ -832,18 +826,4 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-<<<<<<< HEAD
-=======
-}
-
-
-
-#togglePassword{
-    cursor: pointer;
-    color:#000;
-}
-
-.fa-user, .fa-lock{
-    color: #ffffff !important;
->>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
 }
