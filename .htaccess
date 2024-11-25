@@ -1,0 +1,30 @@
+
+# Aquestes configuració evita la navegació entre directoris. 
+# font de configuració https://www.youtube.com/watch?v=y9KEgh6yXME&list=PLH_tVOsiVGzkGD2sB-cmSkxKzvoMYZrHL
+# Desactiva l'índex de directoris per evitar mostrar un llistat del contingut del directori si no hi ha un index.
+# Protegeix la visualització de les carpetes i aixina sols poden accedir els que tenen permisos.
+Options ALL -Indexes
+
+# Habilita el motor de reescriptura.
+RewriteEngine on 
+
+# Verifica si la sol·licitud no fa referència a un directori existent.
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Verifica si la sol·licitud no fa referència a un fitxer existent.
+# Fa que una condició ha de ser verdadera per a que procesada la url 
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Redirigeix totes les sol·licituds que no són fitxers ni directoris existents a l'index.php amb la URL com a paràmetre 'url'.
+# [QSA] - Afegeix els paràmetres de la cadena de consulta a la URL reescrita.
+# [L] - Finalitza el procés de reescriptura i no executa altres regles si aquesta és aplicada.
+# Amb aquesta configuració obtenim els parametres que anem a enviar a traves de la url.
+# Tot el que vinga despres de index.php es va a enmagatzemar en la variable url
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+Options ALL -Indexes
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+

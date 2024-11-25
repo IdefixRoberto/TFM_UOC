@@ -1,0 +1,76 @@
+ddqfe{
+    display: none;
+}
+
+.user-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+.user-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.user-info {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.user-info:last-child {
+    border-bottom: none;
+}
+.user-info span {
+    font-weight: bold;
+    color: #555;
+}
+.status {
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.status.actiu {
+    background-color: #28a745;
+}
+.status.inactiu {
+    background-color: #dc3545;
+}
+
+.user-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+.user-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.user-info {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.user-info:last-child {
+    border-bottom: none;
+}
+.user-info span {
+    font-weight: bold;
+    color: #555;
+}
+
+.administrador{
+    color:#28a745
+}
+.administrador:hover{
+    text-decoration: underline;
+    scale: 1.1;
+    transition: 0.5s;
+}

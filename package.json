@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@stripe/stripe-js": "^4.8.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-select": "^1.14.0-beta3",
+    "chart.js": "^4.4.5",
+    "date-fns": "^4.1.0",
+    "stripe": "^17.2.0"
+  }
+}

@@ -1,0 +1,122 @@
+.app-sidebar__user-avatar {
+    width: 48px;
+    background: gray;
+    padding: 6px;
+}
+.app-sidebar__toggle{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15pt;
+}
+.app-sidebar__toggle::before{
+	display: none;
+}
+      <div class="modal-header header-primary">
+      <div class="modal-header header-primary">
+	  
+.headerRegister, .header-primary{
+	background: #00967a;
+	color: #FFF;
+}
+.headerUpdate{
+	background: #007bff;
+	color: #FFF;
+}
+.notBlock{
+	display: none;
+}
+
+
+.status {
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.status.actiu {
+    background-color: #28a745;
+}
+.status.inactiu {
+    background-color: #dc3545;
+}
+
+.user-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+.user-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.user-info {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: "Comic Neue",'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    
+}
+.user-info:last-child {
+    border-bottom: none;
+}
+.user-info span {
+    font-weight: bold;
+    color: #555;
+}
+
+<<<<<<< HEAD
+
+.arreglo_imatge{
+    border-radius: 50%;
+    max-width: 20vw;
+    margin: 5vh 2vw;
+    
+}
+
+
+.arreglo_imatge {
+    border-radius: 50%;
+    max-width: 20vw;
+    height: auto;
+    margin: 5vh auto; 
+}
+=======
+.div_Imatge_Usuari{
+    border-radius: 50% !important;
+    border: 6px solid gray;
+    max-width: 12vw;
+    min-width: 150px !important;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.div_Imatge{
+    margin: 3vw 30%;
+
+
+    
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #FFF;
+  }
+>>>>>>> 6ba31bd6b6aff5048acb845e0e6f7f0ac953efeb
