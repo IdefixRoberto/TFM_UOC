@@ -1,4 +1,4 @@
-//*************************************** 14/02/2024  ******************************************************************
+//*************************************** 14/07/2024  ******************************************************************
 
 Hui estic intentant que no em done el error 
 
@@ -32,7 +32,7 @@ Fatal error: Uncaught Error: Call to a member function selectModulos() on null i
 //Torne a començar a fer de bellnou els permisos, no sé on està el error i una retirada a temps es una vitoria
 
 
-// 27 de febrer 2024
+// 27 de Juliol 2024
 
 He borrat els commits sense voler, he perdut tota possibilitat de recuperar-los i comence de nou amb ells, pero els problemes de  
 
@@ -67,7 +67,7 @@ Fatal error: Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violat
 
 
 
-28 de febrer de 2024
+28 de Juliol de 2024
 
 Error solucionat quan el Rols usuaris ja existia, no avisaba de forma correcta deia que s'incorporaba pero no.
 
