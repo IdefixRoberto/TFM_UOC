@@ -12,3 +12,5 @@ EXPOSE 80
 
 # Especificar la comanda d'inici per arrencar el servidor PHP
 CMD ["php", "-S", "0.0.0.0:80", "-t", "/var/www/html"]
+# Arrenquem Apache
+# CMD ["apache2-foreground"]
