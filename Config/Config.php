@@ -1,30 +1,23 @@
 <?php
-//En aquest arxiu anem a declarar varaibles constants com el cons de JS
-   //Creem les constants per indicar, la direcció on està el projecte, la llibreria i la vista.
-    const BASE_URL = 'http://localhost/TFM/';
-    const LIBS = 'Libraires/';
-    const VIEWS = 'Views/';
+// Direccions del projecte
+define('BASE_URL', 'http://localhost/TFM/');
+define('LIBS', 'Libraires/');
+define('VIEWS', 'Views/');
 
-//creem les variables per a conectarnos a la base de dades
+// Conexió a la base de dades (amb suport per variables d'entorn)
+define('DB_HOST', getenv('DB_HOST') ?: "localhost"); // Usa la variable d'entorn o localhost per defecte
+define('DB_USER', getenv('DB_USER') ?: "root");      // Usa la variable d'entorn o root per defecte
+define('DB_PASSWORD', getenv('DB_PASSWORD') ?: ""); // Usa la variable d'entorn o una cadena buida
+define('DB_NAME', getenv('DB_NAME') ?: "db_TFM");    // Usa la variable d'entorn o db_TFM per defecte
+define('DB_CHARSET', "charset=utf8");               // Per al conjunt de caràcters
 
-const DB_HOST = "localhost"; // Nom del nostre servidor
-const DB_USER = "root"; //Nom del nostre usuari
-const DB_PASSWORD = ""; //Contrasenya per conectar
-const DB_NAME= "db_TFM"; //Nom de la base de dades
-const DB_CHARSET = "charset=utf8"; //S'utilitza per a les instruccions de SQL
+// Separadors per als decimals
+define('SPD', ',');
+define('SPM', '.');
 
-//Separador per als decimals, utlitzat en el Helper
+// Símbol de la moneda
+define('SMONEY', "€");
 
-const SPD = ',';
-const SPM= '.';
-
-//Simbol de la moneda
-
-const SMONEY ="€";
-
-//Zona horaria
-
+// Zona horària
 date_default_timezone_set('Europe/Madrid');
-
-
 ?>
