@@ -13,7 +13,11 @@
     <link rel="icon" href="<?= media();?>/img/uploads/favicon/Sin_título-removebg-preview.png">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Titol de la pàgina web-->
     <title><?= $data['page_tag'] ?> </title>
     <!-- Main CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
@@ -71,6 +75,10 @@
                             <a target="_blank" href="" class="text-white d-flex align-items-center mr-5 inici-center">
                         <i class="fas fa-envelope me-1 mr-4"></i> <span class="newsleterinici">Newsletter</span>
                             </a>
+                            <a target="_blank" href="<?php echo base_url(); ?>registrarUsuari" id="login-link" class="text-white d-flex align-items-center inici-center">
+                            <!-- Si el usuario no está logueado -->
+                            <i id="login-icon" class="fas fa-user-plus me-1 mr-3 fax"></i>
+                            <span id="login-text" class=" mr-4 ">Registrar-se</span>
                             <a target="_blank" href="<?php echo base_url(); ?>login" id="login-link" class="text-white d-flex align-items-center inici-center">
                             <!-- Si el usuario no está logueado -->
                             <i id="login-icon" class="fa-solid fa-user-lock me-1 mr-3 fax"></i>

@@ -728,5 +728,40 @@ main {
     transform: scale(1.03);
 }
 
+.is-invalid{
+    color: red;
+    font-family: "Comic Neue", cursive, sans-serif, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
 
+.titolNouUsuari{
+    font-family: "Bungee Tint", sans-serif, "Comic Neue", cursive,  'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
 
+.headerRegister{
+    background-color: #81cfffba !important;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2.5vh;
+}
+
+.tile-footer{
+    padding-bottom: 5vh !important;
+}
+
+.gris{
+    background-color: #a0a0a0;
+}
+
+.white{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-family: "Comic Neue", serif, 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
