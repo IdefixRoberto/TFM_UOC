@@ -1,4 +1,4 @@
-const baseURL = 'http://tfmuocecomerc.rf.gd/'
+const baseURL = 'http://localhost/TFM/'
 
 document.addEventListener('DOMContentLoaded', function() {
     const infoButtons = document.querySelectorAll('.btn-yellow');

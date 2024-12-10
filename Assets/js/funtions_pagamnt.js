@@ -1,4 +1,4 @@
-const baseURL = 'http://tfmuocecomerc.rf.gd/'
+const baseURL = 'http://localhost/TFM/'
 
 // Funció per obtenir els detalls del carret del servidor i guardar-los en localStorage
 // Capturar l'objecte cart de localStorage
