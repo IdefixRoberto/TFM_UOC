@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             finalizeButton.addEventListener('click', function() {
                 if (!finalizeButton.disabled) {
-                    window.location.href = '/TFM/pagament';
+                    window.location.href = `${baseURL}pagament`;
                 }
             });
         } else {
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     showConfirmButton: false,
                     willClose: () => {
                         clearCart(); // Netejar el carret
-                        window.location.href = '/TFM/pagamentCompletat'; // Redirigir a la pàgina de pagament completat
+                        window.location.href = `${baseURL}pagamentCompletat`; // Redirigir a la pàgina de pagament completat
                     }
                 });
         })
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             if (data.success) {
                                 // Una vegada regista la comanda, buidaré el carret i redirigiré a la pàgina de pagament completat
                                 clearCart();
-                                window.location.href = '/TFM/pagamentCompletat';
+                                window.location.href = `${baseURL}pagamentCompletat`;
                             } else {
                                 alert('Error al registrar la comanda: ' + data.message);
                             }
@@ -485,7 +485,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             if (data.success) {
                                 // Una vegada regista la comanda, buidaré el carret i redirigiré a la pàgina de pagament completat
                                 clearCart();
-                                window.location.href = '/TFM/pagamentCompletat';
+                                window.location.href = `${baseURL}pagamentCompletat`;
                             } else {
                                 alert('Error al registrar la comanda.');
                             }

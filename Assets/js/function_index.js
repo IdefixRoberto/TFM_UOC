@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             finalizeButton.addEventListener('click', function() {
                 if (!finalizeButton.disabled) {
-                    window.location.href = '/TFM/pagament';
+                    window.location.href = `${baseURL}pagament`;
                 }
             });
         } else {

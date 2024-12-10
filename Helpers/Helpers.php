@@ -32,7 +32,7 @@
 
     function navAdmin($data="")
     {
-        $view_nav = "TFM/Views/Template/nav_admin.php";
+        $view_nav = "Views/Template/nav_admin.php";
         require_once($view_nav);
     }
 
