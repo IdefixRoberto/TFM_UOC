@@ -48,8 +48,6 @@ class Rol extends Controllers {
                     die();
                 }
 
-
-
 }
 
     ?>
