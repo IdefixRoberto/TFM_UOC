@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost/TFM/'
+const baseURL = 'http://tfmuocecomerc.rf.gd/'
 
 document.addEventListener('DOMContentLoaded', function() {
     tableProductos = new DataTable('#tableProductos', {

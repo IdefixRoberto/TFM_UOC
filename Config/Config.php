@@ -1,6 +1,6 @@
 <?php
 // Direccions del projecte
-define('BASE_URL', 'http://localhost/TFM/');
+define('BASE_URL', 'http://tfmuocecomerc.rf.gd/');
 define('LIBS', 'Libraires/');
 define('VIEWS', 'Views/');
 
