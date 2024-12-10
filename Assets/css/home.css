@@ -265,7 +265,7 @@ a[href*="whatsapp"] .fa-whatsapp {
     text-decoration: underline;
 }
 
-a[href*="http://localhost/TFM/login"] span:hover{
+a[href*="login"] span:hover{
     color: #68be00;
     text-decoration: underline;
 }

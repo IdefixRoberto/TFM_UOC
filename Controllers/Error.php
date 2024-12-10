@@ -7,7 +7,7 @@
             //utilitze parent per accedir i executar el mètode constructor de la nostra class
            parent::__construct();
            //Redirigir a la pàgina d'inici si no hi ha cap error
-           header('Location: http://localhost/TFM/index');
+           header('Location:'.base_url().'index');
            exit;
         }
 

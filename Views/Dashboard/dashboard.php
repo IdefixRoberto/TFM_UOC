@@ -20,7 +20,7 @@
   <div class="user-container justify-content-center align-items-center">
     <h2>Dades de l'Usuari</h2>
     <div class="arreglo ">
-      <img class="arreglo_imatge d-flex justify-content-center align-items-center" src="http://localhost/TFM/img/usuaris/<?=  $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
+      <img class="arreglo_imatge d-flex justify-content-center align-items-center" src="<?= base_url();?>img/usuaris/<?=  $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
     <div></div>
     <div class="user-info">
         <span>ID Usuari: </span> <?= $_SESSION['userData']['id']; ?>

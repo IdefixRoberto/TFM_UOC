@@ -7,7 +7,7 @@
     <div class="container mt-5 m-b-5">
         <div class="row">
             <div class="col-md-6">
-                <img src="http://localhost/TFM/img/jocs/<?= $data['product']['imagen']; ?>.webp" class="img-fluid" alt="<?= $data['product']['nomproducte']; ?>">
+                <img src="<?= base_url();?>img/jocs/<?= $data['product']['imagen']; ?>.webp" class="img-fluid" alt="<?= $data['product']['nomproducte']; ?>">
             </div>
             <div class="col-md-6">
                 <h1 class="text-center mt-5"><?= $data['product']['nomproducte']; ?></h1>

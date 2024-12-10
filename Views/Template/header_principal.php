@@ -111,19 +111,19 @@
         <!-- Barra de navegació -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container ">
-                <a class="navbar-brand" href="http://localhost/TFM/index"><img class="logoWebIdefix" src="<?= media();?>/img/uploads/favicon/Sin_título-removebg-preview.png" alt="logo web"></a>
+                <a class="navbar-brand" href="<?= base_url();?>index"><img class="logoWebIdefix" src="<?= media();?>/img/uploads/favicon/Sin_título-removebg-preview.png" alt="logo web"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto">
-                            <li class="nav-item mr-lg-3  mb-2"><a class="link-apartats" href="http://localhost/TFM/ameritrash">Ameritrash</a></li>
-                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="http://localhost/TFM/filler">Filler</a></li>
-                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="http://localhost/TFM/rol">Rol</a></li>
-                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="http://localhost/TFM/cartes">Cartes</a></li>
-                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="http://localhost/TFM/familiars">Familiars</a></li>
-                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="http://localhost/TFM/accessoris">Accessoris</a></li>
-                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="http://localhost/TFM/ofertes">Ofertes!</a></li>
+                            <li class="nav-item mr-lg-3  mb-2"><a class="link-apartats" href="<?= base_url();?>ameritrash">Ameritrash</a></li>
+                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="<?= base_url();?>filler">Filler</a></li>
+                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="<?= base_url();?>rol">Rol</a></li>
+                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="<?= base_url();?>cartes">Cartes</a></li>
+                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="<?= base_url();?>familiars">Familiars</a></li>
+                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="<?= base_url();?>accessoris">Accessoris</a></li>
+                            <li class="nav-item mr-lg-3 mb-2"><a class="link-apartats" href="<?= base_url();?>ofertes">Ofertes!</a></li>
                         </ul>
                         <form class="d-flex" method="GET" action="cercar">
                             <input class="form-control me-2 ml-4" type="search" name="query" placeholder="Cercar jocs" aria-label="Search">

@@ -1,3 +1,6 @@
+const baseURL = 'http://localhost/TFM/'
+
+
 function comandaRandom() {
     console.log(localStorage)
     let idpedido = localStorage.getItem('idpedido');
@@ -56,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function loadCartDetails() {
-        fetch('http://localhost/TFM/Carret/getCartDetails', {
+        fetch(`${baseURL}Carret/getCartDetails`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

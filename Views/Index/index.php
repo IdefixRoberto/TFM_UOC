@@ -19,15 +19,15 @@
                 <div class="carousel-inner  galeria-fons allcenter ">
                     <div class="carousel-item active">
             <h2 class="text-center carrouselText"> Circus Fun </h2>
-            <img src="http://localhost/TFM/img/jocs/circusFun.webp" class="d-block imatgeMaxTamany  carouselImgatge " alt="Imatge 1">
+            <img src="<?= base_url();?>img/jocs/circusFun.webp" class="d-block imatgeMaxTamany  carouselImgatge " alt="Imatge 1">
             </div>
             <div class="carousel-item ">
                 <h2 class="text-center  carrouselText"> Dixit </h2>
-                <img src="http://localhost/TFM/img/jocs/dixit.webp" class="d-block imatgeMaxTamany  carouselImgatge " alt="Imatge 2">
+                <img src="<?= base_url();?>img/jocs/dixit.webp" class="d-block imatgeMaxTamany  carouselImgatge " alt="Imatge 2">
             </div>
             <div class="carousel-item">
                 <h2 class="text-center  carrouselText"> Descent Acte 2</h2>
-                <img src="http://localhost/TFM/img/jocs/Descent-Leyendas-Tinieblas-La-Guerra-del-Traidor-removebg-preview.webp" class="  carouselImgatge  d-block imatgeMaxTamany" alt="Imatge 3">
+                <img src="<?= base_url();?>img/jocs/Descent-Leyendas-Tinieblas-La-Guerra-del-Traidor-removebg-preview.webp" class="  carouselImgatge  d-block imatgeMaxTamany" alt="Imatge 3">
             </div>
             
         </div>
@@ -54,7 +54,7 @@
                                 <div class="alert alert-success oferta-label position-absolute">Oferta</div>
                             <?php endif; ?>
                             <!-- Imatge del producte, assumint que totes les imatges són .webp -->
-                            <img src="http://localhost/TFM/img/jocs/<?= $product['imagen']; ?>.webp" class="card-img-top w-100 h-100" alt="<?= $product['nomproducte']; ?>">
+                            <img src="<?= base_url();?>img/jocs/<?= $product['imagen']; ?>.webp" class="card-img-top w-100 h-100" alt="<?= $product['nomproducte']; ?>">
                             <div class="card-body text-center">
                                 <!-- Nom del producte -->
                                 <h5 class="card-title "><?= $product['nomproducte']; ?></h5>

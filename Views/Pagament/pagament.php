@@ -23,7 +23,7 @@
         </div>
 
         <!-- Formulari de pagament -->
-        <form id="payment-form"  class="mt-4 w-50 align-items-center justify-content-center m-auto padingtops" action="http://localhost/TFM/Pagament/registrarComanda" method="POST">
+        <form id="payment-form"  class="mt-4 w-50 align-items-center justify-content-center m-auto padingtops" action="<?= base_url();?>Pagament/registrarComanda" method="POST">
             <h1>Informació del pagament</h1>
             <div class="alert alert-dark" role="alert">
                 <h2>Total: <span id="cart-total2" class="cart-total">0</span>€</h2>

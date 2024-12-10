@@ -1,3 +1,5 @@
+const baseURL = 'http://localhost/TFM/'
+
 document.addEventListener('DOMContentLoaded', function() {
     tableProductos = new DataTable('#tableProductos', {
         "aProcessing": true,
@@ -6,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
         },
         "ajax": {
-            "url": base_url + "Productos/getProductos",
+            "url": baseURL + "Productos/getProductos",
             "dataSrc": "",
         },
         "columns": [
@@ -52,7 +54,7 @@ function fntViewProducte() {
     btnProductes.forEach(function(btnProductes) { 
         btnProductes.addEventListener('click', function() {
             let idProducte = this.getAttribute("pr");
-            let ajaxUrl = base_url + 'Productos/getProducto/' + idProducte;
+            let ajaxUrl = baseURL + 'Productos/getProducto/' + idProducte;
             
             
             // Utilitzem fetch per obtenir les dades
@@ -129,7 +131,7 @@ function fntEditProducte() {
            
            
             let idProducte = this.getAttribute("pr");
-            let ajaxUrl = base_url + '/Productos/getProducto/' + idProducte;
+            let ajaxUrl = baseURL + '/Productos/getProducto/' + idProducte;
             
             
             // Utilitze fetch per obtenir les dades
@@ -254,7 +256,7 @@ function obrimodal() {
 document.addEventListener('DOMContentLoaded', function() {
     let selectCategory = document.getElementById('listcategory');
 
-    fetch('http://localhost/TFM/Productos/selectCategoriesController')
+    fetch(`${baseURL}Productos/selectCategoriesController`)
         .then(response => response.json())
         .then(data => {
             // Verifiquem si hi ha categories
@@ -313,7 +315,7 @@ formProducte.onsubmit = function(e) {
     }
 
     // Preparar la sol·licitud AJAX amb Fetch
-    let ajaxUrl = base_url + 'Productos/setProducto';
+    let ajaxUrl = baseURL + 'Productos/setProducto';
     let formData = new FormData(formProducte);
 
     fetch(ajaxUrl, {

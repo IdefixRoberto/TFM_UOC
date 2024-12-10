@@ -1,3 +1,5 @@
+const baseURL = 'http://localhost/TFM/'
+
 // Funció per obtenir els detalls del carret del servidor i guardar-los en localStorage
 // Capturar l'objecte cart de localStorage
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,7 +41,7 @@ const enviarComandaABaseDAdes = () => {
         console.log('Actualització Mètode de pagament:', paymentMethod);
 
         // Enviar les dades al servidor
-        fetch('http://localhost/TFM/pagament/processarComanda', {
+        fetch(`${baseURL}pagament/processarComanda`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -107,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Funció per a carregar els detalls del carret
     function loadCartDetails() {
-        fetch('http://localhost/TFM/Carret/getCartDetails', {
+        fetch(`${baseURL}Carret/getCartDetails`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -286,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
        
 
        // Enviar les dades al servidor
-        fetch('http://localhost/TFM/pagament/processarComanda', {
+        fetch(`${baseURL}pagament/processarComanda`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -342,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('paymentMethod', selectedMethod);
         
             // Cride el mètode per gestionar el pagament amb Stripe
-            fetch('http://localhost/TFM/pagament/comandesCapturadades/'+selectedMethod, {
+            fetch(`${baseURL}pagament/comandesCapturadades/`+selectedMethod, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -389,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         alert('Error amb el pagament: ' + result.error.message);
                     } else if (result.paymentIntent.status === 'succeeded') {
                         // Si el pagament es exitos ho registre en la meua base de dades
-                        fetch('http://localhost/TFM/pagament/comandesCapturadades', {
+                        fetch(baseURL +'pagament/comandesCapturadades', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
@@ -429,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('paymentMethod', selectedMethod);
         
             // Cride el mètode per gestionar el pagament amb Stripe
-            fetch('http://localhost/TFM/pagamentCompletat/comandesCapturadades', {
+            fetch(baseURL+'pagamentCompletat/comandesCapturadades', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -471,7 +473,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         alert('Error amb el pagament: ' + result.error.message);
                     } else if (result.paymentIntent.status === 'succeeded') {
                         // Si el pagament es exitos ho registre en la meua base de dades
-                        fetch('http://localhost/TFM/pagament/comandesCapturadades', {
+                        fetch(baseURL+'pagament/comandesCapturadades', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',

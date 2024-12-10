@@ -1,7 +1,7 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="http://localhost/TFM/img/usuaris/<?=  $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?= base_url();?>img/usuaris/<?=  $_SESSION['userData']['imatgeUsuari']; ?>.webp" alt="User Image">
         <div>
           <p class="app-sidebar__user-name"></span> <?= $_SESSION['userData']['nom']; ?> </span> <?= $_SESSION['userData']['cognoms']; ?> </p>
           <p class="app-sidebar__user-designation"><?= $_SESSION['userData']['nombre_rol']; ?></p>

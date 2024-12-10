@@ -1,10 +1,12 @@
+const baseURL = 'http://localhost/TFM/'
+
 document.addEventListener('DOMContentLoaded', function() {
     const infoButtons = document.querySelectorAll('.btn-yellow');
 
     infoButtons.forEach(button => {
         button.addEventListener('click', function() {
             const productId = this.getAttribute('data-producte');
-            window.location.href = `http://localhost/TFM/DetallProducte/detallProducte/${productId}`;
+            window.location.href = `${baseURL}DetallProducte/detallProducte/${productId}`;
         });
     });
 });
@@ -60,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function loadCartDetails() {
-        fetch('http://localhost/TFM/Carret/getCartDetails', {
+        fetch(`${baseURL}Carret/getCartDetails`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

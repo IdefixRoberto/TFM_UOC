@@ -20,7 +20,7 @@
                                 <div class="col-md-4">
                                     <div class="card mb-5">
                                         <!-- Imatge del producte, assumint que totes les imatges són .webp -->
-                                        <img src="http://localhost/TFM/img/jocs/<?= $product['imagen']; ?>.webp" class="card-img-top w-100 h-100" alt="<?= $product['nomproducte']; ?>">
+                                        <img src="<?= base_url();?>img/jocs/<?= $product['imagen']; ?>.webp" class="card-img-top w-100 h-100" alt="<?= $product['nomproducte']; ?>">
                                         <div class="card-body text-center">
                                             <!-- Nom del producte -->
                                             <h5 class="card-title"><?= $product['nomproducte']; ?></h5>
