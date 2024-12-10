@@ -217,3 +217,21 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('click', function() {
     toggleFinalizeButton()
 });
+
+
+//Contacte 
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevenir el comportament per defecte
+
+    // Mostra l'alerta de confirmació amb SweetAlert2
+    Swal.fire({
+      icon: 'success',
+      title: 'Formulari enviat!',
+      text: "El teu missatge s'ha enviat correctament.",
+      confirmButtonText: "D'acord"
+    });
+
+    this.reset();
+  });
+

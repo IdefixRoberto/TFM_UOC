@@ -1,6 +1,7 @@
 <?php
 // Direccions del projecte
 define('BASE_URL', 'http://localhost/TFM/');
+define('base_url', 'http://localhost/TFM/');
 define('LIBS', 'Libraires/');
 define('VIEWS', 'Views/');
 

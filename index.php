@@ -14,7 +14,7 @@
     if (!empty($_GET['url'])) {
         $url = $_GET['url'];
       } else {
-        $url ='home/home';
+        $url ='index/index';
       }
 
       //ara incorporem la variable url en una array

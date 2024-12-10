@@ -8,20 +8,20 @@
                 </div>                
 
                 <!-- Secció de formes de pagament -->
-                <div class="col-md-4 mb-4 mb-md-0 align-items-center text-center justify-content-center ">
-                    <h3>Formes de pagament</h3>
-                    <ul class="list-unstyled ms-4">
-                        <li class="d-flex align-items-center mb-3 margin-left">
+                <div class="col-md-4 mb-4 mb-md-0 ">
+                    <h3 class="align-items-center text-center justify-content-center ">Formes de pagament</h3>
+                    <ul class="list-unstyled ms-4 align-items-left  text-center ">
+                        <li class="d-flex align-items-left mb-3 margin-left">
                             <i class="fas fa-mobile-alt mr-3"></i>
                             <span>Bizum</span>
                         </li>
-                        <li class="d-flex align-items-center mb-3 margin-left">
+                        <li class="d-flex align-items-left mb-3 margin-left">
                             <i class="fas fa-credit-card mr-3"></i>
                             <span>Tarjeta</span>
                         </li>
-                        <li class="d-flex align-items-center margin-left">
-                            <i class="fab fa-paypal mr-3"></i>
-                            <span>Paypal</span>
+                        <li class="d-flex align-items-left mb-5 margin-left">
+                            <i class="fas fa-solid  fa-money-bill  ml-2 mr-3"></i> 
+                            <span>Transferencia</span>
                         </li>
                     </ul>
 
@@ -31,9 +31,9 @@
                 <div class="col-md-4">
                     <h3>Respecte a nosaltres</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Contacte</a></li>
-                        <li><a href="#" class="text-white">Condicions legals</a></li>
-                        <li><a href="#" class="text-white">Política de privacitat</a></li>
+                        <li><a href="<?= base_url();?>contacte" class="text-white">Contacte</a></li>
+                        <li><a href="<?= base_url();?>condicionsLegals" class="text-white">Condicions legals</a></li>
+                        <li><a href="<?= base_url();?>politicaPrivacitat" class="text-white">Política de privacitat</a></li>
                     </ul>
                 </div>
             </div>
