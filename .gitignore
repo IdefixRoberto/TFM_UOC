@@ -1,0 +1,26 @@
+# Evitar pujar la carpeta node_modules
+node_modules/
+
+# Fitxers temporals de sistema operatiu
+.DS_Store
+Thumbs.db
+
+# Fitxers de configuració d'IDE (per exemple, Visual Studio Code)
+.vscode/
+.idea/
+
+# Fitxers temporals o de treball
+*.log
+*.tmp
+*.bak
+
+# Fitxers de compilació o generats automàticament
+dist/
+build/
+
+# Fitxers relacionats amb npm o yarn
+package-lock.json
+yarn.lock
+
+# Fitxers de depuració
+debug.log
