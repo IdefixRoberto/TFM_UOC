@@ -11,10 +11,10 @@
     //Configuració rutas amigables
     //Creem una variable url, que captura el valor de la url mitjançant el mètode GET
     //El ['url'] es el nom de la variable de l'arxiu .htaccess index.php?url
-    if (!empty($_GET['url'])) {
+    if (!empty($_GET['url']) && $_GET['url']!== "index.php" &&  $_GET['url']!== "index" ) {
         $url = $_GET['url'];
       } else {
-        $url ='index/index';
+        $url ='Views/Index/index';
       }
 
       //ara incorporem la variable url en una array
