@@ -1,11 +1,11 @@
 
 <?php
 class Conexion{
-    private $host = "localhost"; // Nom del nostre servidor
-    private $user = "root"; //Nom del nostre usuari
-    private $password = ""; //Contrasenya per conectar
-    private $db= "db_TFM"; //Nom de la base de dades
-    private $conect; //S'utilitza per a les instruccions de SQL
+    private $host = DB_HOST; 
+    private $user = DB_USER; 
+    private $password = DB_PASSWORD; 
+    private $db = DB_NAME; 
+    private $conect;
 
 //Inicie el meu métode constructor per operar amb el nosre SQL
     public function __construct(){

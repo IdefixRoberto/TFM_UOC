@@ -1,4 +1,3 @@
-
     <?php
     //requerim el arxiu de la configuració
     //require_once es per que si ja està carregat no ho torna a carregar
@@ -11,7 +10,7 @@
     //Configuració rutas amigables
     //Creem una variable url, que captura el valor de la url mitjançant el mètode GET
     //El ['url'] es el nom de la variable de l'arxiu .htaccess index.php?url
-    if (!empty($_GET['url']) && $_GET['url']!== "index.php" &&  $_GET['url']!== "index" ) {
+    if (!empty($_GET['url'])  ) {
         $url = $_GET['url'];
       } else {
         $url ='Views/Index/index';
